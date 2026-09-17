@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4: CSS Selectors Practice</title>
+    <link rel="stylesheet" href="q4.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors Practice Page</h1>
+    </header>
+
+    <main class="content-area">
+        <section id="main-section">
+            <h2>Element Selector Target</h2>
+            <p>This paragraph is styled via element selector.</p>
+        </section>
+
+        <section class="class-section">
+            <h2 class="special-title">Class Selector Target</h2>
+            <p class="highlight">This paragraph is styled via class selector.</p>
+        </section>
+
+        <section class="combinator-section">
+            <h2>Combinators Demonstration</h2>
+            
+            <!-- Direct Child Combinator -->
+            <div class="parent-box">
+                <p>Direct Child Paragraph (Parent > p)</p>
+                <div>
+                    <p>Nested Descendant Paragraph</p>
+                </div>
+            </div>
+
+            <!-- Adjacent Sibling Combinator -->
+            <h3>Heading for Sibling Test</h3>
+            <p>Adjacent Sibling Paragraph (h3 + p)</p>
+            <p>General Sibling Paragraph (h3 ~ p)</p>
+        </section>
+
+        <section class="attribute-section">
+            <h2>Attribute Selectors</h2>
+            <a href="https://example.com" target="_blank">External Link (_blank)</a>
+            <a href="#internal">Internal Link</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Assignment Submission &copy; 2026</p>
+    </footer>
+</body>
+</html>

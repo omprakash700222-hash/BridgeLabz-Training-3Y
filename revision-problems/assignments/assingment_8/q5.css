@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf2f7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #1a202c;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Flexbox layout alignment and spacing */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* Base button styles */
+.btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #3182ce;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2b6cb0;
+}
+
+.btn-primary:active {
+    background-color: #1a365d;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: #718096;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #4a5568;
+}
+
+.btn-secondary:active {
+    background-color: #2d3748;
+}
+
+/* Outline Button */
+.btn-outline {
+    background-color: transparent;
+    border-color: #3182ce;
+    color: #3182ce;
+}
+
+.btn-outline:hover {
+    background-color: #3182ce;
+    color: white;
+}
+
+/* Focus state for active accessibility */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
+}
+
+/* Disabled Pseudo-class */
+.btn-disabled:disabled {
+    background-color: #cbd5e0;
+    color: #a0aec0;
+    cursor: not-allowed;
+    box-shadow: none;
+    border-color: transparent;
+}

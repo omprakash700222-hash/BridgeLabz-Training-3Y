@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Flexbox alignment in one row */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+/* :hover Selector */
+.demo-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.demo-link:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* :focus Selector */
+.demo-input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.demo-input:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.5);
+}
+
+/* :active Selector */
+.demo-btn {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.demo-btn:active {
+    background-color: #c0392b;
+    transform: scale(0.95);
+}
+
+/* :nth-child Selector */
+.demo-list {
+    list-style: none;
+    width: 100%;
+}
+
+.demo-list li {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.demo-list li:nth-child(odd) {
+    background-color: #ecf0f1;
+}
+
+.demo-list li:nth-child(even) {
+    background-color: #bdc3c7;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

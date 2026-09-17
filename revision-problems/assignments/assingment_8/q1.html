@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1: Pseudo-Classes</title>
+    <link rel="stylesheet" href="q1.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Pseudo-Classes Demonstration</h1>
+    </header>
+    <main class="container">
+        <!-- Hover Example -->
+        <section class="card">
+            <h2>:hover</h2>
+            <a href="#" class="demo-link">Hover over me</a>
+            <p>Changes background and text color when hovered.</p>
+        </section>
+
+        <!-- Focus Example -->
+        <section class="card">
+            <h2>:focus</h2>
+            <input type="text" class="demo-input" placeholder="Click or tab here...">
+            <p>Highlights border and outline when focused.</p>
+        </section>
+
+        <!-- Active Example -->
+        <section class="card">
+            <h2>:active</h2>
+            <button class="demo-btn">Click and Hold</button>
+            <p>Scales down and changes color while clicked.</p>
+        </section>
+
+        <!-- Nth-Child Example -->
+        <section class="card">
+            <h2>:nth-child()</h2>
+            <ul class="demo-list">
+                <li>Item 1 (Odd)</li>
+                <li>Item 2 (Even)</li>
+                <li>Item 3 (Odd)</li>
+                <li>Item 4 (Even)</li>
+            </ul>
+            <p>Alternating row colors using :nth-child(even/odd).</p>
+        </section>
+    </main>
+    <footer>
+        <p>Assignment Submission &copy; 2026</p>
+    </footer>
+</body>
+</html>

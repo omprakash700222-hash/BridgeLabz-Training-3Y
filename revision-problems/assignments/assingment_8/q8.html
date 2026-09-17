@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8: Box Sizing Comparison</title>
+    <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Box-Sizing Comparison</h1>
+    </header>
+
+    <main class="container">
+        <section class="box-wrapper">
+            <!-- Box 1: Content Box -->
+            <div class="box content-box">
+                <h2>content-box</h2>
+                <p>Width: 300px<br>Padding: 30px<br>Border: 10px</p>
+                <strong>Total Rendered Width = 380px</strong>
+            </div>
+
+            <!-- Box 2: Border Box -->
+            <div class="box border-box">
+                <h2>border-box</h2>
+                <p>Width: 300px<br>Padding: 30px<br>Border: 10px</p>
+                <strong>Total Rendered Width = 300px</strong>
+            </div>
+        </section>
+
+        <section class="explanation">
+            <p><strong>Explanation:</strong> <code>content-box</code> adds padding and borders on top of the specified width, making the box larger. <code>border-box</code> includes padding and border within the specified width.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Assignment Submission &copy; 2026</p>
+    </footer>
+</body>
+</html>
