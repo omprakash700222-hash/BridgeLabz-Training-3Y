@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.box {
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.box:hover {
+    background: linear-gradient(135deg, #222, #555);
+    color: white;
+    transform: translateY(-5px);
+}
+
+code {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    .principles {
+        grid-template-columns: 1fr;
+    }
+}
